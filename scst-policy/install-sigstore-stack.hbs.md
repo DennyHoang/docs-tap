@@ -535,3 +535,13 @@ This updates the policy-controller only. It is important that if Policy Controll
 
 For more information about profiles, see [Package Profiles](../about-package-profiles.hbs.md).
 For more information about Policy Controller, see [Install Supply Chain Security Tools - Policy Controller](./install-scst-policy.hbs.md) documentation.
+
+## <a id='sigstore-uninstall'></a> Uninstall Sigstore Stack
+
+```bash
+kubectl delete -f "release-tuf.yaml"
+kubectl delete -f "release-ctlog.yaml"
+kubectl delete -f "release-fulcio.yaml"
+kubectl delete -f "release-rekor.yaml"
+kubectl delete -f "release-trillian.yaml"
+```
